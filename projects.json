@@ -1,0 +1,36 @@
+[
+  {
+    "id": "special-space-pong",
+    "cover": "pong",
+    "title": "Special Space Pong",
+    "when": {
+      "en": "University project, rebuilt in 2026",
+      "es": "Proyecto de la universidad, reconstruido en 2026"
+    },
+    "summary": {
+      "en": "A Pong game set in space that you can play with the mouse, the keyboard or by moving a real object in front of your webcam. I rewrote it from a university assignment into a tested, scene-based game that also runs in the browser.",
+      "es": "Un Pong en el espacio que se juega con el mouse, el teclado o moviendo un objeto real frente a la cámara web. Lo reescribí a partir de un trabajo de la universidad hasta convertirlo en un juego con escenas, pruebas automáticas y una versión que corre en el navegador."
+    },
+    "highlights": {
+      "en": [
+        "Webcam control with OpenCV: a calibrated motion tracker running on its own thread moves the paddle.",
+        "Campaign of five levels plus a secret one, and a survival mode with asteroids, all defined as data tables.",
+        "An opponent that misses on purpose, tuned with a simulation script instead of by feel.",
+        "Built for the web with pygbag and released for Windows by a GitHub Actions pipeline."
+      ],
+      "es": [
+        "Control por cámara con OpenCV: un detector de movimiento calibrado, en su propio hilo, mueve la paleta.",
+        "Campaña de cinco niveles más uno secreto, y un modo supervivencia con asteroides, todo definido en tablas de datos.",
+        "Un rival que falla a propósito, ajustado con un script de simulación en lugar de a ojo.",
+        "Compilado para la web con pygbag y publicado para Windows por un pipeline de GitHub Actions."
+      ]
+    },
+    "stack": ["Python", "pygame-ce", "OpenCV", "NumPy", "pygbag", "pytest", "GitHub Actions"],
+    "links": {
+      "play": "https://marcelotipan.github.io/special-space-pong/",
+      "code": "https://github.com/MarceloTipan/special-space-pong",
+      "download": "https://github.com/MarceloTipan/special-space-pong/releases/latest",
+      "itch": null
+    }
+  }
+]

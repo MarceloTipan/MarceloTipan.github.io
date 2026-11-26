@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcelo Tipán</title>
+  <meta name="description" content="Software developer and computer graphics engineer from Quito, Ecuador. Backend systems in C#/.NET and Python, plus games and graphics that react to movement.">
+  <meta name="theme-color" content="#17122B">
+
+  <meta property="og:title" content="Marcelo Tipán">
+  <meta property="og:description" content="Software developer and computer graphics engineer. Backend systems, games and graphics that react to movement.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marcelotipan.github.io/">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Unbounded:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projects" data-i18n="skip">Skip to projects</a>
+
+  <header class="top">
+    <a class="brand" href="#">Marcelo Tipán</a>
+    <nav class="top-nav" aria-label="Main">
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="lang" type="button" id="lang-toggle" aria-label="Ver en español">ES</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
+      <div class="hero-text">
+        <h1 id="hero-title">Marcelo<br>Tipán</h1>
+        <p class="lede" data-i18n="hero.lede">Software developer and computer graphics engineer. I build backend services for a living, and games and graphics that react to how you move.</p>
+        <p class="hint" data-i18n="hero.hint">Move your cursor, or your finger, through the field.</p>
+      </div>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" data-i18n="projects.title">Projects</h2>
+      <div class="project-list" id="project-list">
+        <p class="empty" data-i18n="projects.loading">Loading projects…</p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="about.title">About</h2>
+      <div class="about-body">
+        <div class="about-text">
+          <p data-i18n="about.p1">I'm a software developer based in Quito, Ecuador, working fully remote. Day to day I build and maintain backend services for a logistics company in Mexico, mostly in C# and .NET with RabbitMQ and PostgreSQL, and Python services with FastAPI.</p>
+          <p data-i18n="about.p2">I studied Computer Graphics Engineering at Universidad Central del Ecuador. My thesis and a 2022 paper in Revista Odigos were about detecting body movement with computer vision to control a virtual reality application. That idea keeps coming back in my side projects: the game on this page can be played by moving a paddle in front of your webcam.</p>
+        </div>
+        <dl class="skills">
+          <div>
+            <dt data-i18n="about.backend">Backend</dt>
+            <dd>C#, .NET, RabbitMQ, PostgreSQL, SQL, Python, FastAPI, aiohttp</dd>
+          </div>
+          <div>
+            <dt data-i18n="about.graphics">Graphics and vision</dt>
+            <dd>OpenCV, three.js, pygame, WebGL</dd>
+          </div>
+          <div>
+            <dt data-i18n="about.ai">AI tooling</dt>
+            <dd>LangChain</dd>
+          </div>
+          <div>
+            <dt data-i18n="about.delivery">Delivery</dt>
+            <dd>Git, GitHub Actions, pytest</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+      <p data-i18n="contact.text">Open to remote roles in backend development or graphics. The quickest way to reach me:</p>
+      <ul class="contact-links">
+        <li><a href="https://github.com/MarceloTipan">GitHub</a></li>
+        <!-- Fill these in and uncomment:
+        <li><a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a></li>
+        <li><a href="mailto:YOUR@EMAIL">YOUR@EMAIL</a></li>
+        -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p data-i18n="footer">Built by hand with three.js. Every cover on this page is a live 3D scene.</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
